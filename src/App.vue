@@ -20,9 +20,7 @@ export default {
 @import "assets/styles/main.scss";
 
 
-// html ,body {
-//   overflow-x: hidden;
-// }
+
 
 
 </style>

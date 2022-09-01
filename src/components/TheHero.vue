@@ -42,22 +42,11 @@ export default {
     return {};
   },
   methods: {
-    // beforeEnter(el) {
-    //   el.style.opacity = 0;
-    //   el.style.transform = "translateY(60px)";
-    // },
-
-    // enter(el) {
-    //   gsap.to(el, {
-    //     opacity: 1,
-    //     y: 0,
-    //     duration : 1,
-    //   });
-    // },
   },
 
   mounted() {
-    gsap.fromTo('.col-intro',{ y: -90 , opacity: 0}, { y: 0 , opacity : 1 , duration: 1 });
+    gsap.fromTo('.col-intro',{ y: -120 , opacity: 0}, { y: 0 , opacity : 1 , duration: 0.8 , });
+    gsap.fromTo('.col-image',{ y: 100 , opacity: 0}, { y: 0 , opacity : 1 , duration: 0.6 , delay : 0.7 });
     
   },
 };
