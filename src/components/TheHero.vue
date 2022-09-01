@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/variables";
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #121117;
 }
 
@@ -122,6 +122,12 @@ button {
 }
 
 @media screen and (max-width : 768px) {
+  .row {
+    max-width: 100%;
+  }
+  * {
+    font-size: 83%;
+  }
  .col-intro {
   text-align: center;
  }
