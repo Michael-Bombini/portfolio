@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="row p-1 align-items-center">
-        <div class="col-sm-12 col-md-6  col-intro">
+        <div class="col-sm-12 col-md-6 col-intro">
           <h3>Hey there!</h3>
           <h1>I'm Michael</h1>
           <h2>A junior <span>Full-Stack</span> web developer</h2>
@@ -19,24 +19,47 @@
             /></span>
           </button>
         </div>
-        <div class="col-md-8 col-lg-6">
+        <div class="col-md-8 col-lg-6 col-image">
           <img :src="require('../assets/images/blob.svg')" alt="" />
         </div>
       </div>
     </div>
 
-    <HeroLinks/>
+    <HeroLinks />
   </section>
 </template>
 
 <script>
-import HeroLinks from './HeroLinks.vue';
+  
+import gsap from "gsap";
+import HeroLinks from "./HeroLinks.vue";
+
+
 export default {
-    name: "TheHero",
-    data() {
-        return {};
-    },
-    components: { HeroLinks }
+  name: "TheHero",
+  components: { HeroLinks },
+  data() {
+    return {};
+  },
+  methods: {
+    // beforeEnter(el) {
+    //   el.style.opacity = 0;
+    //   el.style.transform = "translateY(60px)";
+    // },
+
+    // enter(el) {
+    //   gsap.to(el, {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration : 1,
+    //   });
+    // },
+  },
+
+  mounted() {
+    gsap.fromTo('.col-intro',{ y: -90 , opacity: 0}, { y: 0 , opacity : 1 , duration: 1 });
+    
+  },
 };
 </script>
 
@@ -49,9 +72,8 @@ section {
 }
 
 .container {
-  padding: 150px 0 ;
+  padding: 150px 0;
 }
-
 
 img {
   max-width: 100%;
@@ -70,7 +92,6 @@ h2 {
   color: $white;
   margin-bottom: 2.8rem;
 }
-
 
 span {
   color: $primary;
@@ -95,8 +116,6 @@ h3::before {
   left: -5%;
 }
 
-
-
 button {
   background-color: transparent;
   color: $primary-light;
@@ -104,37 +123,43 @@ button {
   font-size: $text-small;
   border: 1px solid $primary;
   padding: 0.7rem 0.8rem;
-  width: 220px;
+  min-width: 220px;
+
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.15);
+    background-color: $primary;
+    color: $white;
+    transition: all 0.4s ease;
+  }
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width: 1200px) {
   * {
     font-size: 89%;
   }
 }
 
-@media screen and (max-width : 992px) {
-  .row{
+@media screen and (max-width: 992px) {
+  .row {
     justify-content: center;
   }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .row {
     max-width: 100%;
   }
   * {
     font-size: 83%;
   }
- .col-intro {
-  text-align: center;
- }
- h2 {
-  margin: auto;
-  margin-bottom: 1.8rem;
- }
+  .col-intro {
+    text-align: center;
+  }
+  h2 {
+    margin: auto;
+    margin-bottom: 1.8rem;
+  }
 }
-
-
-
 </style>
