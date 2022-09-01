@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <TheHero />
-    <h1 class="bg-danger text-center fw-bold">WORK IN PROGRESS!</h1>
+    <ProjectsList/>
   </div>
 </template>
 
 <script>
 import TheHero from "./components/TheHero.vue";
+import ProjectsList from "./components/ProjectsList.vue";
 
 export default {
   name: "App",
   components: {
     TheHero,
-  },
+    ProjectsList
+},
 };
 </script>
 

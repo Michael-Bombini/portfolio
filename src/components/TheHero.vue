@@ -7,13 +7,13 @@
           <h1>I'm Michael</h1>
           <h2>A junior <span>Full-Stack</span> web developer</h2>
           <button class="mt-2">
-            See my works
+            <a href="" class="btn-link"> See my works </a>
             <span class="ms-3"
               ><img :src="require('../assets/images/work.svg')" alt=""
             /></span>
           </button>
           <button class="ms-sm-3 ms-md-0 ms-lg-4 mt-2">
-            Get in contact
+            <a href="" class="btn-link"> Get in contact </a>
             <span class="ms-3"
               ><img :src="require('../assets/images/deliver.svg')" alt=""
             /></span>
@@ -30,10 +30,8 @@
 </template>
 
 <script>
-  
 import gsap from "gsap";
 import HeroLinks from "./HeroLinks.vue";
-
 
 export default {
   name: "TheHero",
@@ -41,13 +39,19 @@ export default {
   data() {
     return {};
   },
-  methods: {
-  },
+  methods: {},
 
   mounted() {
-    gsap.fromTo('.col-intro',{ y: -120 , opacity: 0}, { y: 0 , opacity : 1 , duration: 0.8 , });
-    gsap.fromTo('.col-image',{ y: 100 , opacity: 0}, { y: 0 , opacity : 1 , duration: 0.6 , delay : 0.7 });
-    
+    gsap.fromTo(
+      ".col-intro",
+      { y: -120, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8 }
+    );
+    gsap.fromTo(
+      ".col-image",
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.6, delay: 0.7 }
+    );
   },
 };
 </script>
@@ -57,7 +61,7 @@ export default {
 section {
   position: relative;
   min-height: 100vh;
-  background-color: #121117;
+  background-color: $secondary;
 }
 
 .container {
@@ -121,7 +125,17 @@ button {
     background-color: $primary;
     color: $white;
     transition: all 0.4s ease;
+
+    .btn-link {
+      color: $white;
+      font-weight: bold;
+    }
   }
+}
+
+.btn-link {
+  text-decoration: none;
+  color: $primary-light;
 }
 
 @media screen and (max-width: 1200px) {
