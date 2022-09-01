@@ -24,21 +24,26 @@
         </div>
       </div>
     </div>
+
+    <HeroLinks/>
   </section>
 </template>
 
 <script>
+import HeroLinks from './HeroLinks.vue';
 export default {
-  name: "TheHero",
-  data() {
-    return {};
-  },
+    name: "TheHero",
+    data() {
+        return {};
+    },
+    components: { HeroLinks }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables";
 section {
+  position: relative;
   min-height: 100vh;
   background-color: #121117;
 }
@@ -47,13 +52,6 @@ section {
   padding: 150px 0 ;
 }
 
-svg path {
-  transition: fill 0.5s ease;
-}
-svg:hover path {
-  fill: #db2955;
-  transition: fill 0.5s ease;
-}
 
 img {
   max-width: 100%;
@@ -136,6 +134,7 @@ button {
   margin-bottom: 1.8rem;
  }
 }
+
 
 
 </style>
