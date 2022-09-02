@@ -6,18 +6,22 @@
           <h3>Hey there!</h3>
           <h1>I'm Michael</h1>
           <h2>A junior <span>Full-Stack</span> web developer</h2>
-          <button class="mt-2">
-            <a href="" class="btn-link"> See my works </a>
-            <span class="ms-3"
-              ><img :src="require('../assets/images/work.svg')" alt=""
-            /></span>
-          </button>
-          <button class="ms-sm-3 ms-md-0 ms-lg-4 mt-2">
-            <a href="" class="btn-link"> Get in contact </a>
-            <span class="ms-3"
-              ><img :src="require('../assets/images/deliver.svg')" alt=""
-            /></span>
-          </button>
+          <a href="" class="btn-link">
+            <button class="mt-2">
+              See my works
+              <span class="ms-3"
+                ><img :src="require('../assets/images/work.svg')" alt=""
+              /></span>
+            </button>
+          </a>
+          <a href="" class="btn-link">
+            <button class="ms-sm-3 ms-md-0 ms-lg-4 mt-2">
+              Get in contact
+              <span class="ms-3"
+                ><img :src="require('../assets/images/deliver.svg')" alt=""
+              /></span>
+            </button>
+          </a>
         </div>
         <div class="col-md-8 col-lg-6 col-image">
           <img :src="require('../assets/images/blob.svg')" alt="" />
@@ -65,7 +69,7 @@ section {
 }
 
 .container {
-  padding: 150px 0;
+  padding: 90px 0;
 }
 
 img {
@@ -107,35 +111,6 @@ h3::before {
   position: absolute;
   bottom: 0;
   left: -5%;
-}
-
-button {
-  background-color: transparent;
-  color: $primary-light;
-  border: 0;
-  font-size: $text-small;
-  border: 1px solid $primary;
-  padding: 0.7rem 0.8rem;
-  min-width: 220px;
-
-  transition: all 0.4s ease;
-
-  &:hover {
-    transform: scale(1.15);
-    background-color: $primary;
-    color: $white;
-    transition: all 0.4s ease;
-
-    .btn-link {
-      color: $white;
-      font-weight: bold;
-    }
-  }
-}
-
-.btn-link {
-  text-decoration: none;
-  color: $primary-light;
 }
 
 @media screen and (max-width: 1200px) {

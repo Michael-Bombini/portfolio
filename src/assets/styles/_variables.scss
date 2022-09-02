@@ -3,15 +3,44 @@ $heading-big: 4.5em;
 $heading-medium: 3em;
 $heading-small: 1.5em;
 
-$text-small : 1.2rem;
+$text-small: 1.2rem;
 
+// colors
+$primary: #009f9e;
+$secondary: #121117;
+$tertiary: #da4167;
 
+$primary-light: #11f4f3;
 
-// colors 
-$primary : #009F9E;
-$secondary : #121117;
-$tertiary : #DA4167;
+$white: #fff;
 
-$primary-light : #11F4F3;
+// Buttons Styles
+button {
+  background-color: transparent;
+  color: $primary-light;
+  border: 0;
+  font-size: $text-small;
+  border: 1px solid $primary;
+  padding: 0.7rem 0.8rem;
+  min-width: 220px;
 
-$white : #fff;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.15);
+    background-color: $primary;
+    color: $white;
+    transition: all 0.4s ease;
+    font-weight: bold;
+
+    .btn-link {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}
+
+.btn-link {
+  text-decoration: none;
+  color: $primary-light;
+}
