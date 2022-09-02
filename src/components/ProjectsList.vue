@@ -1,14 +1,14 @@
 <template>
-  <section>
+  <section class="pb-5">
     <div class="container">
       <div class="text-intro">
         <h2 class="mb-5">Projects</h2>
-        <div class="row g-5">
+        <div class="row g-5 mx-auto projects-row">
           <div class="col-12 p-0" v-for="(project, i) in projects" :key="i">
             <div class="row">
               <div
                 class="col-md-12 col-lg-6"
-                :class="{ 'order-0': i % 2 === 0, 'order-1': i % 2 === 1 }"
+                :class="{ 'order-md-0': i % 2 === 0, 'order-md-1': i % 2 === 1 }"
               >
                 <img :src="require('../assets/images/dc-comic.gif')" alt="">
               </div>
@@ -72,4 +72,9 @@ img {
     aspect-ratio: 16/9;
     max-width: 100%;
 }
+
+.projects-row {
+  max-width: 100%;
+}
+
 </style>
