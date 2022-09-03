@@ -24,7 +24,7 @@
           </a>
         </div>
         <div class="col-md-8 col-lg-6 col-image">
-          <img :src="require('../assets/images/michael.svg')" alt="" />
+          <img :src="require('../assets/images/michael.png')" alt="" />
         </div>
       </div>
     </div>
