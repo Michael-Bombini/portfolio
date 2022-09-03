@@ -59,40 +59,40 @@ export default {
   name: "ProjectsList",
   data() {
     return {
-      projects: [
-        {
-          title: "Whatsapp Clone",
-          description:
-            "In this project i've created a whatsapp-like application where you can add fake contacts and send them messages.",
-          image: require("../assets/images/whatsapp.gif"),
-          live: "https://michael-bombini.github.io/vue-boolzapp/",
-          code: "https://github.com/Michael-Bombini/vue-boolzapp",
-        },
-        {
-          title: "NexGen - Lead Customer",
-          description:
-            "In this project i've completely recreated a website using Vue Scss and Bootstrap here i've understanded better how to manage props and use the state management from the store of vue.",
-          image: require("../assets/images/leadcustomer.png"),
-          live: "https://michael-bombini.github.io/proj-html-vuejs/",
-          code: "https://github.com/Michael-Bombini/proj-html-vuejs",
-        },
-        {
-          title: "DC Comics",
-          description:
-            "A recreation of the DC Comics site here i've learned how to manage components in a project and also created a simple image slider",
-          image: require("../assets/images/dc-comic.gif"),
-          live: "https://michael-bombini.github.io/vue-dc-comics/",
-          code: "https://github.com/Michael-Bombini/vue-dc-comics",
-        },
-        {
-          title: "To-do List",
-          description:
-            "A simple To-Do list i've created using html and vue 2 from cdn.",
-          image: require("../assets/images/todo.gif"),
-          live: "https://michael-bombini.github.io/vue-todolist/",
-          code: "https://github.com/Michael-Bombini/vue-todolist",
-        },
-      ],
+      // projects: [
+      //   {
+      //     title: "Whatsapp Clone",
+      //     description:
+      //       "In this project i've created a whatsapp-like application where you can add fake contacts and send them messages.",
+      //     image: require("../assets/images/whatsapp.gif"),
+      //     live: "https://michael-bombini.github.io/vue-boolzapp/",
+      //     code: "https://github.com/Michael-Bombini/vue-boolzapp",
+      //   },
+      //   {
+      //     title: "NexGen - Lead Customer",
+      //     description:
+      //       "In this project i've completely recreated a website using Vue Scss and Bootstrap here i've understanded better how to manage props and use the state management from the store of vue.",
+      //     image: require("../assets/images/leadcustomer.png"),
+      //     live: "https://michael-bombini.github.io/proj-html-vuejs/",
+      //     code: "https://github.com/Michael-Bombini/proj-html-vuejs",
+      //   },
+      //   {
+      //     title: "DC Comics",
+      //     description:
+      //       "A recreation of the DC Comics site here i've learned how to manage components in a project and also created a simple image slider",
+      //     image: require("../assets/images/dc-comic.gif"),
+      //     live: "https://michael-bombini.github.io/vue-dc-comics/",
+      //     code: "https://github.com/Michael-Bombini/vue-dc-comics",
+      //   },
+      //   {
+      //     title: "To-do List",
+      //     description:
+      //       "A simple To-Do list i've created using html and vue 2 from cdn.",
+      //     image: require("../assets/images/todo.gif"),
+      //     live: "https://michael-bombini.github.io/vue-todolist/",
+      //     code: "https://github.com/Michael-Bombini/vue-todolist",
+      //   },
+      // ],
     };
   },
 };
