@@ -64,7 +64,7 @@ export default {
           title: "Whatsapp Clone",
           description:
             "In this project i've created a whatsapp-like application where you can add fake contacts and send them messages.",
-          image: require("../assets/images/whatsapp.gif"),
+          image: require("../assets/images/whatsapp.png"),
           live: "https://michael-bombini.github.io/vue-boolzapp/",
           code: "https://github.com/Michael-Bombini/vue-boolzapp",
         },
@@ -80,7 +80,7 @@ export default {
           title: "DC Comics",
           description:
             "A recreation of the DC Comics site here i've learned how to manage components in a project and also created a simple image slider",
-          image: require("../assets/images/dc-comic.gif"),
+          image: require("../assets/images/dc-comic.png"),
           live: "https://michael-bombini.github.io/vue-dc-comics/",
           code: "https://github.com/Michael-Bombini/vue-dc-comics",
         },
@@ -88,7 +88,7 @@ export default {
           title: "To-do List",
           description:
             "A simple To-Do list i've created using html and vue 2 from cdn.",
-          image: require("../assets/images/todo.gif"),
+          image: require("../assets/images/todo.png"),
           live: "https://michael-bombini.github.io/vue-todolist/",
           code: "https://github.com/Michael-Bombini/vue-todolist",
         },
