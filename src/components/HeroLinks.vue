@@ -27,7 +27,7 @@
         </a>
       </li>
       <li>
-        <a href=""
+        <a href="https://www.linkedin.com/in/Michael-Bombini/"
           ><svg
             width="32"
             height="32"
