@@ -2,11 +2,11 @@
   <section>
     <div class="container">
       <div class="row p-1 align-items-center">
-        <div class="col-sm-12 col-md-6 col-intro">
+        <div class="col-sm-12 col-md-6 col-intro order-1 order-md-0">
           <h3>Hey there!</h3>
           <h1>I'm Michael</h1>
           <h2>A junior <span>Full-Stack</span> web developer</h2>
-          <a href="" class="btn-link">
+          <a href="#projects" class="btn-link">
             <button class="mt-2">
               See my works
               <span class="ms-3"
@@ -14,7 +14,7 @@
               /></span>
             </button>
           </a>
-          <a href="" class="btn-link">
+          <a href="mailto:bombini.michael@gmail.com" class="btn-link">
             <button class="ms-sm-3 ms-md-0 ms-lg-4 mt-2">
               Get in contact
               <span class="ms-3"
