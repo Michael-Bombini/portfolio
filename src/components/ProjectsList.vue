@@ -20,10 +20,10 @@
                   <h2>
                     {{ project.title }}
                   </h2>
-                  <p>{{ project.description }}</p>
+                  <p v-html=project.description></p>
                 </div>
 
-                <a :href="project.live" class="btn-link">
+                <a :href="project.live" class="btn-link" v-if="project.live">
                   <button>
                     Live Preview
                     <span class="ms-3"
@@ -35,7 +35,10 @@
                   </button>
                 </a>
                 <a :href="project.code" class="btn-link">
-                  <button class="ms-sm-3 ms-md-0 ms-xl-4 mt-2">
+                  <button
+                    class="ms-sm-3 ms-md-0 ms-xl-4 mt-2"
+                    :class="{ m0: !project.live }"
+                  >
                     Code
                     <span class="ms-3"
                       ><img
@@ -61,6 +64,14 @@ export default {
     return {
       projects: [
         {
+          title: "Deliveboo",
+          description:
+            "My final full stack bootcamp project where together as a five member team we had to develop a complete full stack web app using all the technologies we've learned across this path. <br> This project is inspired to the famous food-delivery app Deliveroo ",
+          image: require("../assets/images/deliveboo.png"),
+          live: null,
+          code: "https://github.com/proj-65-team4/DeliverBoo4/tree/dev",
+        },
+        {
           title: "Whatsapp Clone",
           description:
             "In this project i've created a whatsapp-like application where you can add fake contacts and send them messages.",
@@ -73,7 +84,7 @@ export default {
           description:
             "In this project i've completely recreated a website using Vue Scss and Bootstrap here i've understanded better how to manage props and use the state management from the store of vue.",
           image: require("../assets/images/leadcustomer.png"),
-          live: "https://michael-bombini.github.io/proj-html-vuejs/",
+          live: "https://michaelbombini-nexgen.netlify.app/",
           code: "https://github.com/Michael-Bombini/proj-html-vuejs",
         },
         {
@@ -109,6 +120,7 @@ section {
     color: $primary;
     text-align: center;
     font-weight: bolder;
+    font-size: $heading-medium;
   }
 }
 
@@ -141,10 +153,17 @@ img {
     min-width: 20ch;
     max-width: 50ch;
     line-height: 1.9rem;
+    color: rgba(255, 255, 255, 0.9);
   }
 }
 .svg {
   width: 32px;
   height: 32px;
+}
+.m0 {
+  margin: 0 !important;
+}
+img {
+  object-fit: cover;
 }
 </style>
