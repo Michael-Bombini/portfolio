@@ -20,7 +20,7 @@
                   <h2>
                     {{ project.title }}
                   </h2>
-                  <p v-html=project.description></p>
+                  <p v-html="project.description"></p>
                 </div>
 
                 <a :href="project.live" class="btn-link" v-if="project.live">
@@ -63,6 +63,14 @@ export default {
   data() {
     return {
       projects: [
+        {
+          title: "Countries Data",
+          description:
+            "A challenge from the frontendmentor site where i had to integrate a REST api of countries,here i've used Vue , Vue Router and Tailwind.",
+          image: require("../assets/images/restcountries.png"),
+          live: "https://michael-bombini-countriesdata.netlify.app/",
+          code: "https://github.com/Michael-Bombini/countries-data",
+        },
         {
           title: "Deliveboo",
           description:
