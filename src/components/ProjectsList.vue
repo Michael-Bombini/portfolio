@@ -95,14 +95,14 @@ export default {
           live: "https://michaelbombini-nexgen.netlify.app/",
           code: "https://github.com/Michael-Bombini/proj-html-vuejs",
         },
-        {
-          title: "DC Comics",
-          description:
-            "A recreation of the DC Comics site here i've learned how to manage components in a project and also created a simple image slider",
-          image: require("../assets/images/dc-comic.png"),
-          live: "https://michael-bombini.github.io/vue-dc-comics/",
-          code: "https://github.com/Michael-Bombini/vue-dc-comics",
-        },
+        // {
+        //   title: "DC Comics",
+        //   description:
+        //     "A recreation of the DC Comics site here i've learned how to manage components in a project and also created a simple image slider",
+        //   image: require("../assets/images/dc-comic.png"),
+        //   live: "https://michael-bombini.github.io/vue-dc-comics/",
+        //   code: "https://github.com/Michael-Bombini/vue-dc-comics",
+        // },
         {
           title: "To-do List",
           description:
