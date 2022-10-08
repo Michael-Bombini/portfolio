@@ -30,7 +30,7 @@ section {
 }
 h2 {
   max-width: 8ch;
-  font-size: $heading-medium;
+  font-size: clamp(2rem , 7vw , $heading-medium);
   color: $white;
 }
 img {
@@ -45,4 +45,7 @@ p {
 strong {
   color: $primary-light;
 }
+
+
+
 </style>

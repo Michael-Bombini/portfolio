@@ -128,7 +128,7 @@ section {
     color: $primary;
     text-align: center;
     font-weight: bolder;
-    font-size: $heading-medium;
+    font-size: clamp(2rem , 7vw , $heading-medium);
   }
 }
 
